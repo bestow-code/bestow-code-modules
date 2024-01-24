@@ -7,7 +7,7 @@ module "secrets" {
   source           = "./secrets"
   dependabot_token = var.dependabot_token
   onepub_token     = var.onepub_token
-  repository_id    = module.repository.repository_id
+  repository_id    = module.repository.name
 }
 
 variable "dependabot_token" {}
