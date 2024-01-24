@@ -17,6 +17,5 @@ variable "onepub_token" {
 }
 
 variable "package_name" {
-  default = ""
   type    = string
 }
