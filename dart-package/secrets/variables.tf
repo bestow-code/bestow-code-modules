@@ -1,4 +1,4 @@
-variable "repository_id" {
+variable "repository_name" {
   type        = string
 }
 variable "dependabot_token" {}
