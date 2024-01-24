@@ -1,7 +1,5 @@
 data "github_repository" "repository" {
-  name        = var.package_name
-  description = var.description
-  visibility  = "public"
+  name        = var.repository_id
 }
 
 resource "github_actions_secret" "onepub_token" {
