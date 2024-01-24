@@ -12,6 +12,7 @@ variable "description" {
 
 resource "github_repository" "repository" {
   name        = var.package_name
+
   description = "A dart package"
   visibility  = "public"
 }
