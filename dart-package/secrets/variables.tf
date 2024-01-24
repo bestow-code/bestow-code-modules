@@ -4,5 +4,5 @@ variable "repository_id" {
 variable "dependabot_token" {}
 
 variable "onepub_token" {
-  type = "string"
+  type = string
 }

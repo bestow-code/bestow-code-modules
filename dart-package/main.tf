@@ -1,22 +1,22 @@
 module "repository" {
-  source = "./repository"
+  source       = "./repository"
   package_name = var.package_name
 }
 
 module "secrets" {
-  source = "./secrets"
+  source           = "./secrets"
   dependabot_token = var.dependabot_token
-  onepub_token = var.onepub_token
-  repository_id = module.repository.repository_id
+  onepub_token     = var.onepub_token
+  repository_id    = module.repository.repository_id
 }
 
 variable "dependabot_token" {}
 
 variable "onepub_token" {
-  type = "string"
+  type = string
 }
 
 variable "package_name" {
   default = ""
-  type        = string
+  type    = string
 }
