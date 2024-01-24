@@ -15,3 +15,7 @@ resource "github_repository" "repository" {
   description = "A dart package"
   visibility  = "public"
 }
+
+output "repository_id" {
+  value = github_repository.repository.repo_id
+}
