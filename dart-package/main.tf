@@ -5,12 +5,12 @@ module "repository" {
 
 module "secrets" {
   source           = "./secrets"
-  dependabot_token = var.dependabot_token
+  release_please_token = var.release_please_token
   onepub_token     = var.onepub_token
   repository_name    = module.repository.name
 }
 
-variable "dependabot_token" {}
+variable "release_please_token" {}
 
 variable "onepub_token" {
   type = string

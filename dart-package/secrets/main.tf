@@ -9,8 +9,8 @@ resource "github_actions_secret" "onepub_token" {
   plaintext_value  = var.onepub_token
 }
 
-resource "github_actions_secret" "dependabot_token" {
+resource "github_actions_secret" "release_please_token" {
   repository       = var.repository_name
-  secret_name      = "dependabot_token"
-  plaintext_value  = var.dependabot_token
+  secret_name      = "release_please_token"
+  plaintext_value  = var.release_please_token
 }

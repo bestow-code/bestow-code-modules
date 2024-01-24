@@ -1,7 +1,7 @@
 variable "repository_name" {
   type        = string
 }
-variable "dependabot_token" {}
+variable "release_please_token" {}
 
 variable "onepub_token" {
   type = string
